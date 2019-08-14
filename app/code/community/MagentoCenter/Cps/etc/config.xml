@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <MagentoCenter_Cps>
+            <version>0.0.1</version>
+        </MagentoCenter_Cps>
+    </modules>
+
+    <global>
+
+        <models>
+            <cps>
+                <class>MagentoCenter_Cps_Model</class>
+            </cps>
+        </models>
+
+        <blocks>
+            <cps>
+                <class>MagentoCenter_Cps_Block</class>
+            </cps>
+        </blocks>
+
+        <resources>
+            <cps_setup>
+                <setup>
+                    <module>MagentoCenter_Cps</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </cps_setup>
+            <cps_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </cps_write>
+            <cps_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </cps_read>
+        </resources>
+        <helpers>
+            <cps>
+                <class>MagentoCenter_Cps_Helper</class>
+            </cps>
+        </helpers>
+    </global>
+
+
+    <frontend>
+        <secure_url>
+            <cps_redirect>/cps/redirect/00</cps_redirect>
+        </secure_url>
+        <routers>
+            <cps>
+                <use>standard</use>
+                <args>
+                    <module>MagentoCenter_Cps</module>
+                    <frontName>cps</frontName>
+                </args>
+            </cps>
+        </routers>
+        <translate>
+            <modules>
+                <MagentoCenter_Cps>
+                    <files>
+                        <default>MagentoCenter_Cps.csv</default>
+                    </files>
+                </MagentoCenter_Cps>
+            </modules>
+        </translate>
+    </frontend>
+
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <MagentoCenter_Cps>
+                    <files>
+                        <default>MagentoCenter_Cps.csv</default>
+                    </files>
+                </MagentoCenter_Cps>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <payment>
+            <cps>
+                <active>0</active>
+                <model>cps/checkout</model>
+                <title>Complete Payment Systems</title>
+                <cps_username></cps_username>
+				<cps_keyfile></cps_keyfile>
+				<cps_keypass></cps_keypass>
+            </cps>
+        </payment>
+    </default>
+</config>

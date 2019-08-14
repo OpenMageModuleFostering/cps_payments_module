@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>cps_payments_module</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Payment extension for Magento</summary>
+    <description>Allows to quickly connect to Magento shopping cart with CPS merchant account.</description>
+    <notes>Release version</notes>
+    <authors><author><name>Alex</name><user>ksers</user><email>aleksanderm@inbox.lv</email></author></authors>
+    <date>2012-08-30</date>
+    <time>11:21:51</time>
+    <contents><target name="magecommunity"><dir name="MagentoCenter"><dir name="Cps"><dir name="Block"><file name="Form.php" hash="da6005e88ed9a79136f6ee9c543c1d48"/><file name="Info.php" hash="4fbc2d5ab98c74bdfdc3ef1a352ba2f6"/><file name="Redirect.php" hash="79aae257a4484a4b52d8f8471f97bbd9"/></dir><dir name="Helper"><file name="Data.php" hash="c86062f8307567afb19bda1044ee61d5"/></dir><dir name="Model"><file name="Checkout.php" hash="e14d6d13dedae7e2bdf479034b8ce5e0"/></dir><dir name="controllers"><file name="RedirectController.php" hash="863fdeec6c83344ada2bf88c4c79228e"/></dir><dir name="etc"><file name="config.xml" hash="8990016fc7bdb9198a05e6a7727ba43e"/><file name="system.xml" hash="eb45585622caaf709a0fcd451e65b071"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="cps"><file name="form.phtml" hash="0e77ab8ce069f514977b158312b86631"/><file name="info.phtml" hash="e92c8339684085303d4f8164b896c6bd"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="cps"><file name="form.phtml" hash="0e77ab8ce069f514977b158312b86631"/><file name="info.phtml" hash="e92c8339684085303d4f8164b896c6bd"/></dir></dir></dir></dir><dir name="default"><dir name="default"><dir name="template"><dir name="cps"><file name="form.phtml" hash="bf67ab5319e573c3565e319756463f3d"/><file name="info.phtml" hash="e92c8339684085303d4f8164b896c6bd"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="MagentoCenter_Cps.xml" hash="5606e8b2466eec0a62c6eab828cb526a"/></dir></target><target name="magelocale"><dir name="en_US"><file name="MagentoCenter_Cps.csv" hash="6aae2ea71a316dcc77d2759150483924"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
