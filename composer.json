@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/cps_payments_module",
+    "name": "OpenMageModuleFostering\/cps_payments_module",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Payment extension for Magento",
     "authors": [
-    {
-        "name": "Alex",
-        "email": "aleksanderm@inbox.lv"
-    }
-],
+        {
+            "name": "Alex",
+            "email": "aleksanderm@inbox.lv"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
